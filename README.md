@@ -8,16 +8,7 @@ The model is trained on the **Breast Cancer Wisconsin dataset** available in the
 
 ---
 
-## Live Demo
 
-You can try the deployed application here:
-
-**Streamlit App:**  
-https://breast-cancer-prediction-ms25nioupnxxas4ssyxeuk.streamlit.app/
-
-The app allows users to input tumor feature values and get a prediction indicating whether the tumor is **Malignant** or **Benign**.
-
----
 
 ## Dataset Information
 
