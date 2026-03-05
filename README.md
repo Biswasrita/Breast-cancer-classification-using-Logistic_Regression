@@ -4,7 +4,18 @@
 
 This project builds a Machine Learning model to classify breast cancer tumors as **Malignant** or **Benign** using the **Logistic Regression algorithm**.
 
-The model is trained on the **Breast Cancer Wisconsin dataset** available in the Scikit-learn library. The project includes data preprocessing, exploratory data analysis, model training, evaluation, and a predictive system.
+The model is trained on the **Breast Cancer Wisconsin dataset** available in the Scikit-learn library. The project includes **data preprocessing, exploratory data analysis, model training, evaluation, and a predictive system**.
+
+---
+
+## Live Demo
+
+You can try the deployed application here:
+
+**Streamlit App:**  
+https://breast-cancer-prediction-ms25nioupnxxas4ssyxeuk.streamlit.app/
+
+The app allows users to input tumor feature values and get a prediction indicating whether the tumor is **Malignant** or **Benign**.
 
 ---
 
@@ -12,19 +23,23 @@ The model is trained on the **Breast Cancer Wisconsin dataset** available in the
 
 The dataset is loaded using:
 
+```
 sklearn.datasets.load_breast_cancer()
+```
 
 Dataset details:
 
-- Total samples: 569
-- Total input features: 30
+- Total samples: **569**
+- Total input features: **30**
 - Target classes:
-  - 0 → Malignant
-  - 1 → Benign
+  - **0 → Malignant**
+  - **1 → Benign**
 
 Dataset shape:
 
+```
 (569, 31)
+```
 
 (30 features + 1 label column)
 
@@ -32,11 +47,12 @@ Dataset shape:
 
 ## Technologies Used
 
-- Python
-- Google Colab
-- NumPy
-- Pandas
-- Scikit-learn
+- Python  
+- Google Colab  
+- NumPy  
+- Pandas  
+- Scikit-learn  
+- Streamlit
 
 ---
 
@@ -46,17 +62,17 @@ Dataset shape:
 
 Libraries used:
 
-- numpy
-- pandas
-- sklearn
+- numpy  
+- pandas  
+- sklearn  
 
 ---
 
 ### 2. Data Collection and Processing
 
-Dataset loaded from sklearn and converted into Pandas DataFrame.
+The dataset is loaded from **Scikit-learn** and converted into a **Pandas DataFrame**.
 
-Label column added to dataset.
+A label column is added to the dataset.
 
 ---
 
@@ -64,11 +80,11 @@ Label column added to dataset.
 
 Performed:
 
-- Displayed first and last rows
-- Checked dataset shape
-- Checked dataset information
-- Statistical summary using describe()
-- Checked distribution of target variable
+- Displayed first and last rows  
+- Checked dataset shape  
+- Checked dataset information  
+- Statistical summary using `describe()`  
+- Checked distribution of the target variable  
 
 ---
 
@@ -76,11 +92,15 @@ Performed:
 
 Features stored in:
 
+```
 X
+```
 
 Target stored in:
 
+```
 Y
+```
 
 ---
 
@@ -88,16 +108,20 @@ Y
 
 Dataset split into:
 
-- Training data → 80%
-- Testing data → 20%
+- **Training data → 80%**
+- **Testing data → 20%**
 
 Training shape:
 
+```
 (455, 30)
+```
 
 Testing shape:
 
+```
 (114, 30)
+```
 
 ---
 
@@ -105,34 +129,42 @@ Testing shape:
 
 Model used:
 
-Logistic Regression
+**Logistic Regression**
 
-Model trained using training data.
+The model is trained using the training dataset.
 
 ---
 
 ### 7. Model Evaluation
 
-Accuracy on Training Data:
+Accuracy on **Training Data**:
 
+```
 95.60%
+```
 
-Accuracy on Testing Data:
+Accuracy on **Testing Data**:
 
+```
 95.61%
+```
 
-The model performs very well and generalizes properly.
+The model performs well and generalizes properly.
 
 ---
 
 ### 8. Predictive System
 
-A predictive system is built where user input is given and model predicts:
+A predictive system is implemented where the user inputs tumor feature values and the model predicts the result.
 
-Output example:
+Example outputs:
 
-The Breast cancer is Malignant
+```
+The breast cancer is Malignant
+```
 
 or
 
-The Breast cancer is Benign
+```
+The breast cancer is Benign
+```
